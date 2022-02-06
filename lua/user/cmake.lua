@@ -17,3 +17,4 @@ vim.g.cmake_build_options = {
 	"-j",
 	"10",
 }
+vim.g.cmake_link_compile_commands = 1
