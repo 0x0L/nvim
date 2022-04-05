@@ -98,6 +98,7 @@ return packer.startup(function(use)
 
 	-- Debugger
 	use("puremourning/vimspector")
+    -- use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
 
 	-- Tmux
 	use("aserowy/tmux.nvim")
