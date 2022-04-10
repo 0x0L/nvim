@@ -13,7 +13,7 @@ vim.g.tokyonight_colors = {
 vim.cmd([[
     try
       colorscheme tokyonight
-    catch /^Vim\%((\a\+)\)\=:E185/
+    catch
       colorscheme default
       set background=dark
     endtry
