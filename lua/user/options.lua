@@ -46,4 +46,4 @@ vim.cmd("set whichwrap+=<,>,[,],h,l")
 vim.cmd([[set iskeyword+=-]])
 vim.cmd [[au BufEnter * set fo-=c fo-=r fo-=o]]
 
-vim.g.python3_host_prog = "/usr/local/Caskroom/miniconda/base/bin/python"
+vim.g.python3_host_prog = "/usr/bin/python3"
