@@ -5,9 +5,10 @@ end
 
 bufferline.setup({
     options = {
+        -- mode = "buffers", -- set to "tabs" to only show tabpages instead
         numbers = "none", -- | "ordinal" | "buffer_id" | "both" | function({ ordinal, id, lower, raise }): string,
         close_command = "Bdelete! %d", -- can be a string | function, see "Mouse actions"
-        right_mouse_command = "Bdelete! %d", -- can be a string | function, see "Mouse actions"
+        right_mouse_command = "vert sbuffer %d", -- can be a string | function, see "Mouse actions"
         left_mouse_command = "buffer %d", -- can be a string | function, see "Mouse actions"
         middle_mouse_command = nil, -- can be a string | function, see "Mouse actions"
         -- NOTE: this plugin is designed with this icon in mind,
@@ -76,7 +77,7 @@ bufferline.setup({
     },
     highlights = {
         fill = {
-            fg = { attribute = "fg", highlight = "#ff0000" },
+            fg = { attribute = "fg", highlight = "Normal" },
             bg = { attribute = "bg", highlight = "TabLine" },
         },
         background = {
